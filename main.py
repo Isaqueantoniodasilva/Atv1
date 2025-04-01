@@ -1,16 +1,15 @@
-cenario = input("Qual o cenário da história? ")
+ambiente = input("Qual o ambiente da história? ")
 personagem = input("Quem é o personagem? ")
-objeto = input("O que o personagem achou? ")
+poder = input("poder do personagem?")
 local_objeto = input("Onde estava a coisa que ele achou? ")
 
-if "floresta" in cenario or "Floresta" in cenario:
-    historia = (f"{personagem} caminhava pela {cenario} quando, de repente, avistou {objeto} "
+if "praia" in ambiente or "morro da conceição" in ambiente:
+    historia = (f"{personagem} caminhava pela {ambiente} quando, de repente, avistou uma reliquia estranha... "
                 f"{local_objeto}. Com o coração acelerado decidiu se aproximar para investigar.")
-elif "cidade" in cenario or "Cidade" in cenario:
-    historia = (f"Nas ruas movimentadas da {cenario}, {personagem} se deparou com {objeto} "
-                f"{local_objeto}. Seria aquilo um sinal do destino?")
+elif "cidade" in ambiente or "Cidade" in ambiente:
+    historia = (f"Nas ruas movimentadas da {ambiente}, {personagem} se deparou com uma reliquia: {poder} no"
+                f"{local_objeto}. Ganhando poderes misteriosos.")
 else:
-    historia = (f"Em um dia comum na {cenario}, {personagem} fez uma descoberta inesperada: "
-                f"{objeto} {local_objeto}. O que isso significava?")
+    historia = ("Aconeteceu nada hoje...")
 
 print(historia)
